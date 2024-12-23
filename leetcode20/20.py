@@ -6,7 +6,7 @@ def isValid(s):
         if char in mapping:
             top_element = stack.pop() if stack else '#'
             if mapping[char] != top_element:
-                return false
+                return False
         else:
             stack.append(char)
     
